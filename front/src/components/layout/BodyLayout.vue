@@ -1,6 +1,6 @@
 <template>
-  <div class="absolute h-full w-full">
-    <img class="absolute" src="src/assets/profile.jpeg" />
+  <div>
+
   </div>
 </template>
 
@@ -8,11 +8,10 @@
 import {defineComponent} from 'vue'
 
 export default defineComponent({
-  name: "TitleBanner",
-
+  name: "BodyLayout"
 })
-</script>
 
+</script>
 <style scoped>
 
 </style>
