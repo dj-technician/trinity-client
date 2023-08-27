@@ -1,5 +1,5 @@
 <template>
-  <div class="home bg-stone-900">
+  <div class="home bg-stone-800">
     <div class="header relative">
       <HeaderLayout/>
     </div>

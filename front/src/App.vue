@@ -2,7 +2,7 @@
   <div class="relative">
     <div class="bg-center bg-no-repeat bg-cover bg-fixed h-screen" style="background-image: url(src/assets/background.jpeg)" >
     </div>
-    <div class="absolute inset-0 flex justify-center">
+    <div class="absolute inset-0 flex justify-center select-none">
       <Home/>
     </div>
   </div>
