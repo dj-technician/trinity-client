@@ -1,6 +1,6 @@
 <template>
-  <div class="inline-flex border-2 w-full h-full">
-    <div class="test flex-initial w-3/4">
+  <div class="inline-flex w-full h-full">
+    <div class="flex-initial w-3/4">
       <div class="inline-flex w-full h-full">
         <div class="flex-initial w-1/5 bg-cover m-3"
              style="background-image: url(src/assets/profile.jpeg)"/>
@@ -52,7 +52,7 @@
                 I started studying in 2018 and began my career in 2020.
               </li>
               <li class="text-sm ml-4">
-                You can find my github here: <a class="text-cyan-100 after:content-['_↗']"
+                You can find my github here: <a class="text-lime-200 after:content-['_↗']"
                                                 href="https://github.com/kakao-leo-jung"
                                                 target="_blank">https://github.com/kakao-leo-jung</a>
               </li>
