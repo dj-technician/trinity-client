@@ -1,12 +1,21 @@
 <template>
-  <div class="inline-flex w-full h-full bg-stone-900">
-    <div class="grid place-items-center m-0 pl-4">
+  <div class="inline-flex w-full h-full bg-stone-900 space-x-4 place-items-center">
+    <div class="flex m-0 pl-4">
       <label for="check">
         <input type="checkbox" id="check"/>
         <span></span>
         <span></span>
         <span></span>
       </label>
+    </div>
+    <div class="flex">
+      <img class="h-8 w-8" src="favicon.ico" />
+    </div>
+    <div class="flex text-stone-300 text-2xl">
+      <span>TRINITY</span>
+    </div>
+    <div class="flex flex-row-reverse w-full px-2">
+      <img class="h-8 w-8 rounded-full" src="src/assets/profile.jpeg" />
     </div>
   </div>
 </template>
