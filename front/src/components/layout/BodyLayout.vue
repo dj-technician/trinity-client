@@ -1,9 +1,9 @@
 <template>
   <div class="inline-flex w-full h-full">
-    <div class="flex-initial w-3/4 ml-3 border">
+    <div class="flex-initial w-3/4 ml-3">
       Hello world
     </div>
-    <div class="flex-initial w-1/4 mx-3 border">
+    <div class="flex-initial w-1/4 mx-3">
       <SideBar/>
     </div>
   </div>
