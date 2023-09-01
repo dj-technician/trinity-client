@@ -140,12 +140,9 @@
 
 <script lang="ts">
 import {defineComponent} from 'vue'
-import TitleBanner from "@/components/home/TitleBanner.vue";
-import Profile from "@/components/home/Profile.vue";
 
 export default defineComponent({
   name: "HeaderLayout",
-  components: {Profile, TitleBanner}
 })
 </script>
 

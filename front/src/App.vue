@@ -1,8 +1,9 @@
 <template>
   <div class="relative">
-    <div class="bg-center bg-no-repeat bg-cover bg-fixed h-screen" style="background-image: url(src/assets/background.jpeg)" >
+    <div class="bg-center bg-no-repeat bg-cover bg-fixed h-screen"
+         style="background-image: url(src/assets/background.jpeg)">
     </div>
-    <div class="absolute inset-0 flex justify-center select-none">
+    <div class="home absolute inset-0 flex justify-center select-none overflow-x-auto">
       <Home/>
     </div>
   </div>
@@ -19,5 +20,8 @@ export default defineComponent({
 </script>
 
 <style scoped>
-
+.home {
+  width: 1280px;
+  margin: 0 auto;
+}
 </style>

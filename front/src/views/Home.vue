@@ -1,12 +1,12 @@
 <template>
   <div class="home bg-stone-800">
     <div class="header-menu">
-      <HeaderMenuLayout />
+      <HeaderMenuLayout/>
     </div>
     <div class="header relative">
       <HeaderLayout/>
     </div>
-    <div class="container block">
+    <div class="block">
       <BodyLayout/>
     </div>
     <div class="footer block">
@@ -29,9 +29,12 @@ export default defineComponent({
 </script>
 
 <style scoped>
+/*
 .home {
   width: 1280px;
 }
+ */
+
 
 .header-menu {
   height: 40px;
