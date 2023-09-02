@@ -5,7 +5,7 @@
       <div class="text-xl text-lime-300">Intensively Engaged</div>
       <div class="text-xs text-stone-400 mb-2">truly passionate and hardworking state at coding.
       </div>
-      <div class="flex flex-col bg-stone-700 p-1 text-stone-300 mb-2">
+      <div class="flex flex-col bg-stone-700 p-1 text-stone-400 mb-2">
         <div class="text-base text-stone-200">Last Activities</div>
         <div class="flex flex-row text-sm justify-between">
           <div>blog :: post</div>
@@ -37,7 +37,7 @@
           <li class="truncate">My blog [trinity] how it works? this is truncate text</li>
         </div>
       </div>
-      <div class="flex flex-col bg-stone-700 p-1 text-stone-300">
+      <div class="flex flex-col bg-stone-700 p-1 text-stone-400">
         <div class="text-base text-stone-200">Statistics</div>
         <div class="flex flex-row text-sm justify-between">
           <div>total visited</div>
