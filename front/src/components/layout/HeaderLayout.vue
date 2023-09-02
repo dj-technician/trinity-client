@@ -2,7 +2,7 @@
   <div class="inline-flex w-full h-full">
     <div class="flex-initial w-3/4">
       <div class="inline-flex w-full h-full">
-        <div class="flex-initial w-1/5 bg-cover m-3"
+        <div class="flex-initial w-1/5 bg-cover m-3 border-4 border-stone-700"
              style="background-image: url(src/assets/profile.jpeg)"/>
         <div class="flex-initial w-4/5 m-3">
           <div class="flex-row w-full h-1/3">
