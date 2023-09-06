@@ -1,6 +1,6 @@
 <template>
   <div class="home flex-row">
-    <div class="header-menu">
+    <div class="header-menu w-[inherit] fixed z-[100]">
       <HeaderMenuLayout/>
     </div>
     <div class="header relative">
@@ -36,13 +36,13 @@ export default defineComponent({
 }
  */
 
-
 .header-menu {
   height: 40px;
 }
 
 .header {
   height: 200px;
+  margin-top: 40px;
 }
 
 .body {

@@ -1,6 +1,18 @@
 <template>
-  <div class="flex bg-stone-800 h-full p-3">
-    Hello world
+  <div class="flex flex-col bg-stone-800 h-full p-3">
+    <div>Hello world</div>
+    <div>Hello world</div>
+    <div>Hello world</div>
+    <div>Hello world</div>
+    <div>Hello world</div>
+    <div>Hello world</div>
+    <div>Hello world</div>
+    <div>Hello world</div>
+    <div>Hello world</div>
+    <div>Hello world</div>
+    <div>Hello world</div>
+
+
   </div>
 </template>
 
