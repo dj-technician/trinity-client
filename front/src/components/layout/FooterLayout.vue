@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-full h-full mt-1 bg-stone-800 place-items-center justify-center">
+  <div class="flex w-full h-full bg-stone-800 place-items-center justify-center">
     <div class="text-base text-stone-600">TRINITY / 2023 / Powered by Devjk. All Rights Reserved.</div>
   </div>
 </template>

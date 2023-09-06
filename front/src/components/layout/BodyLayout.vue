@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-full h-full mt-1">
+  <div class="flex w-full py-1 min-h-[inherit]">
     <div class="flex-initial w-3/4">
       <BodyMain />
     </div>

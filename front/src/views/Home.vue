@@ -45,6 +45,10 @@ export default defineComponent({
   height: 200px;
 }
 
+.body {
+  min-height: calc(100vh - 280px);
+}
+
 .footer {
   height: 40px;
 }
