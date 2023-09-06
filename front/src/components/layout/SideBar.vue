@@ -1,6 +1,6 @@
 <template>
   <div class="flex-col">
-    <div class="bg-stone-900 p-2">
+    <div class="bg-stone-900 p-2 mx-1 h-full">
       <div class="text-xs text-stone-300">Current Mode</div>
       <div class="text-xl text-lime-300">Intensively Engaged</div>
       <div class="text-xs text-stone-400 mb-2">truly passionate and hardworking state at coding.

@@ -1,9 +1,9 @@
 <template>
-  <div class="inline-flex w-full h-full">
-    <div class="flex-initial w-3/4 ml-3">
-      Hello world
+  <div class="flex w-full h-full mt-1">
+    <div class="flex-initial w-3/4">
+      <BodyMain />
     </div>
-    <div class="flex-initial w-1/4 mx-3">
+    <div class="flex-initial w-1/4">
       <SideBar/>
     </div>
   </div>
@@ -12,10 +12,11 @@
 <script lang="ts">
 import {defineComponent} from 'vue'
 import SideBar from "@/components/layout/SideBar.vue";
+import BodyMain from "@/components/layout/BodyMain.vue";
 
 export default defineComponent({
   name: "BodyLayout",
-  components: {SideBar}
+  components: {BodyMain, SideBar}
 })
 
 </script>

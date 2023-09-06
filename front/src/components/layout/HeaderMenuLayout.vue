@@ -1,5 +1,5 @@
 <template>
-  <div class="inline-flex w-full h-full bg-stone-900 space-x-4 place-items-center">
+  <div class="flex w-full h-full bg-stone-800 space-x-4 place-items-center">
     <div class="flex m-0 pl-4">
       <label for="check">
         <input type="checkbox" id="check"/>

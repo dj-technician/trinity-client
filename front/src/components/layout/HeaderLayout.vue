@@ -1,5 +1,5 @@
 <template>
-  <div class="inline-flex w-full h-full">
+  <div class="inline-flex w-full h-full bg-stone-800">
     <div class="flex-initial w-3/4">
       <div class="inline-flex w-full h-full">
         <div class="flex-initial w-1/5 bg-cover m-3 border-4 border-stone-700"

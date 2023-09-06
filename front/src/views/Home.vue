@@ -1,16 +1,16 @@
 <template>
-  <div class="home bg-stone-800">
+  <div class="home flex-row">
     <div class="header-menu">
       <HeaderMenuLayout/>
     </div>
     <div class="header relative">
       <HeaderLayout/>
     </div>
-    <div class="block">
+    <div class="body">
       <BodyLayout/>
     </div>
-    <div class="footer block">
-
+    <div class="footer">
+      <FooterLayout/>
     </div>
   </div>
 </template>
@@ -20,11 +20,12 @@ import {defineComponent} from 'vue'
 import HeaderLayout from "@/components/layout/HeaderLayout.vue";
 import BodyLayout from "@/components/layout/BodyLayout.vue";
 import HeaderMenuLayout from "@/components/layout/HeaderMenuLayout.vue";
+import FooterLayout from "@/components/layout/FooterLayout.vue";
 
 export default defineComponent({
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Home",
-  components: {HeaderMenuLayout, BodyLayout, HeaderLayout},
+  components: {FooterLayout, HeaderMenuLayout, BodyLayout, HeaderLayout},
 })
 </script>
 
@@ -42,5 +43,9 @@ export default defineComponent({
 
 .header {
   height: 200px;
+}
+
+.footer {
+  height: 40px;
 }
 </style>
