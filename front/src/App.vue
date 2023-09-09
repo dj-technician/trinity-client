@@ -28,9 +28,7 @@ export default defineComponent({
 .background {
   background-image: url(src/assets/background.jpeg);
   background-position: center;
-  transform: scale(1);
-  z-index: -1; /* 배경 이미지가 내용 뒤로 가도록 설정 */
-  animation: zoom 30s infinite alternate;
+  animation: zoom 30s infinite;
 }
 
 @keyframes zoom {
@@ -38,7 +36,7 @@ export default defineComponent({
     background-size: 100%;
   }
   100% {
-    background-size: 110%;
+    background-size: 120%;
   }
 }
 </style>

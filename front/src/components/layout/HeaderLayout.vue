@@ -1,5 +1,5 @@
 <template>
-  <div class="inline-flex w-full h-full bg-stone-800">
+  <div class="inline-flex w-full h-full bg-stone-800 bg-opacity-90">
     <div class="flex-initial w-3/4">
       <div class="inline-flex w-full h-full">
         <div class="flex-initial w-1/5 bg-cover m-3 border-4 border-stone-700"
@@ -77,7 +77,7 @@
         <div class="text-stone-300 text-xl mb-1">
           Status :: Leetcode
         </div>
-        <div class="flex flex-initial bg-stone-900 h-full w-full p-1 items-center justify-center">
+        <div class="flex flex-initial bg-stone-900 h-full w-full p-1 items-center justify-center bg-opacity-60">
           <div class="m-1 ">
             <div class="shrink-1 relative max-h-[120px] max-w-[120px] z-base">
               <svg class="h-full w-full origin-center -rotate-90 transform" viewBox="0 0 100 100">
