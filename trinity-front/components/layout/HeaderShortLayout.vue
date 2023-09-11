@@ -5,7 +5,10 @@
          class="flex flex-row place-items-center space-x-2 px-4 animate-[fade-in_0.3s_both]">
       <div class="bg-cover w-8 h-8"
            style="background-image: url(/profile.jpeg)"/>
-      <div class="text-xl text-stone-50 cursor-pointer">{{ blogInfo.header.name}}</div>
+      <div class="text-xl text-stone-50 cursor-pointer">{{ blogInfo.header.name }}</div>
+    </div>
+    <div class="text-stone-600 hover:text-stone-300 cursor-pointer">
+      <NuxtLink :to="'/' + blogInfo.meta.userName">home</NuxtLink>
     </div>
     <div class="text-stone-600 hover:text-stone-300 cursor-pointer">
       <NuxtLink :to="'/' + blogInfo.meta.userName + '/about'">about</NuxtLink>
