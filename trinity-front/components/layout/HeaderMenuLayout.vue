@@ -9,13 +9,13 @@
       </label>
     </div>
     <div class="flex">
-      <img class="h-8 w-8" src="favicon.ico" />
+      <img class="h-8 w-8" src="/favicon.ico" />
     </div>
     <div class="flex text-stone-50 text-2xl">
       <span>TRINITY</span>
     </div>
     <div class="flex flex-row-reverse w-full px-2">
-      <img class="h-8 w-8 rounded-full" src="../../public/profile.jpeg" />
+      <img class="h-8 w-8 rounded-full" src="/profile.jpeg" />
     </div>
   </div>
 </template>

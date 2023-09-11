@@ -2,8 +2,8 @@
   <div class="inline-flex w-full h-full bg-stone-800 bg-opacity-90">
     <div class="flex-initial w-3/4">
       <div class="inline-flex w-full h-full">
-        <div class="flex-initial w-1/5 bg-cover m-3 border-4 border-stone-700"
-             style="background-image: url(profile.jpeg)"/>
+        <div @click="goUserHome" class="flex-initial w-1/5 bg-cover m-3 border-4 border-stone-700 cursor-pointer"
+             style="background-image: url(/profile.jpeg)"/>
         <div class="flex-initial w-4/5 m-3">
           <div class="flex-row w-full h-1/3">
             <div class="flex space-x-3">
@@ -13,19 +13,19 @@
               <div class="flex flex-row space-x-6">
                 <div
                     class="tracking-wide font-medium subpixel-antialiased text-3xl text-stone-50 hero glitch layers"
-                    data-text="DEVJK">
-                  {{ blogInfo.headerInfo.name }}
+                    :data-text="blogInfo.header.name">
+                  <NuxtLink :to="'/' + blogInfo.meta.userName">{{ blogInfo.header.name }}</NuxtLink>
                 </div>
                 <div
                     class="tracking-wide font-extralight subpixel-antialiased text-3xl text-stone-50">
-                  [ {{ blogInfo.headerInfo.jobName }} ]
+                  [ {{ blogInfo.header.jobName }} ]
                 </div>
               </div>
             </div>
             <div class="flex space-x-3">
               <div
                   class="half_background_grey tracking-wide font-extralight subpixel-antialiased text-sm text-stone-300">
-                {{ blogInfo.headerInfo.subJobName }}
+                {{ blogInfo.header.subJobName }}
               </div>
               <div
                   class="tracking-wide font-extralight subpixel-antialiased text-sm text-stone-100">
@@ -33,7 +33,7 @@
               </div>
               <div
                   class="half_background_yellow tracking-wide font-extralight subpixel-antialiased text-sm text-stone-300">
-                {{ blogInfo.headerInfo.corpName }}
+                {{ blogInfo.header.corpName }}
               </div>
               <div
                   class="tracking-wide font-extralight subpixel-antialiased text-sm text-stone-100">
@@ -41,12 +41,12 @@
               </div>
               <div
                   class="tracking-wide font-extralight subpixel-antialiased text-sm text-stone-300">
-                {{ blogInfo.headerInfo.location }}
+                {{ blogInfo.header.location }}
               </div>
             </div>
           </div>
           <div class="flex flex-row w-full h-2/3 items-center text-stone-400 text-base">
-            <div v-html="blogInfo?.headerInfo.description"></div>
+            <div v-html="blogInfo?.header.description"></div>
           </div>
           <!--          <div class="flex flex-row w-full h-2/3 items-center text-stone-400 text-base">-->
           <!--            <ul class="list-disc list-inside">-->
@@ -63,8 +63,8 @@
       </div>
     </div>
     <div class="flex-initial w-1/4 m-3">
-      <LeetCodeModule v-if="blogInfo?.headerInfo.module.name === Module.Leetcode"
-                      :module="blogInfo.headerInfo.module"/>
+      <LeetCodeModule v-if="blogInfo?.header.module.name === Module.Leetcode"
+                      :module="blogInfo.header.module"/>
     </div>
   </div>
 </template>
@@ -73,10 +73,21 @@
 import {BlogInfo} from "~/model/BlogInfo";
 import LeetCodeModule from "~/components/module/LeetCodeModule.vue";
 import {Module} from "~/model/Modules";
+import {PropType} from "@vue/runtime-core";
+import {useRouter} from "vue-router";
+
+const router = useRouter();
 
 const props = defineProps({
-  blogInfo: BlogInfo
+  blogInfo: {
+    type: Object as PropType<BlogInfo>,
+    required: true
+  }
 });
+
+function goUserHome() {
+  router.push('/' + props.blogInfo.meta.userName);
+}
 
 </script>
 

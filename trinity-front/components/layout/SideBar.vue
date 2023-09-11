@@ -56,7 +56,7 @@
       </div>
     </div>
     <div>
-      Helloworld
+      <!-- todo : 동적인 레이아웃 추가 필요. -->
     </div>
   </div>
 </template>

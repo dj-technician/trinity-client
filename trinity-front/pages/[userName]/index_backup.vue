@@ -1,5 +1,5 @@
 <template>
-  <div class="home flex-row">
+  <div class="w-[inherit] flex-row">
     <div class="header-menu w-[inherit] fixed z-[100]">
       <HeaderMenuLayout/>
     </div>
@@ -11,7 +11,14 @@
       <HeaderLayout :blog-info="blogInfo"/>
     </div>
     <div class="body">
-      <BodyLayout/>
+      <div class="flex w-full py-1 min-h-[inherit]">
+        <div class="flex-initial w-3/4">
+          <BodyMain/>
+        </div>
+        <div class="flex-initial w-1/4">
+          <SideBar/>
+        </div>
+      </div>
     </div>
     <div class="footer">
       <FooterLayout/>
@@ -21,22 +28,27 @@
 
 <script setup lang="ts">
 import FooterLayout from "~/components/layout/FooterLayout.vue";
-import BodyLayout from "~/components/layout/BodyLayout.vue";
 import HeaderLayout from "~/components/layout/HeaderLayout.vue";
 import HeaderShortLayout from "~/components/layout/HeaderShortLayout.vue";
 import HeaderMenuLayout from "~/components/layout/HeaderMenuLayout.vue";
 import {LeetcodeModule} from "~/model/Modules";
-import {BlogInfo} from "~/model/BlogInfo";
+import {BlogInfo, Header} from "~/model/BlogInfo";
+import BodyMain from "~/components/layout/BodyMain.vue";
+import SideBar from "~/components/layout/SideBar.vue";
 
-let showHeaderShort = ref(false);
-const blogInfo: BlogInfo = reactive({
-  headerInfo: {
-    name: "DEVJK",
-    jobName: "Software Engineer",
-    subJobName: "Backend Developer",
-    corpName: "kakao",
-    location: "Bundang, Korea",
-    description: "<ul class=\"list-disc list-inside\">\n" +
+const route = useRoute()
+
+console.log(route.params.name);
+
+const showHeaderShort = ref(false);
+const blogInfo: BlogInfo = reactive(new BlogInfo(
+    new Header(
+        "DEVJK",
+        "Software Engineer",
+        "Backend Developer",
+        "kakao",
+        "Bundang, Korea",
+        "<ul class=\"list-disc list-inside\">\n" +
         "              Welcome to DEVJK's development journal.\n" +
         "              <li class=\"text-sm ml-4\">\n" +
         "                I started studying in 2018 and began my career in 2020.\n" +
@@ -47,20 +59,20 @@ const blogInfo: BlogInfo = reactive({
         "                                                target=\"_blank\">https://github.com/kakao-leo-jung</a>\n" +
         "              </li>\n" +
         "            </ul>",
-    module: new LeetcodeModule(
-        103,
-        11,
-        80,
-        12,
-        711,
-        1502,
-        624,
-        33.3,
-        82.4,
-        67.4
-    ),
-  }
-});
+        new LeetcodeModule(
+            103,
+            11,
+            80,
+            12,
+            711,
+            1502,
+            624,
+            33.3,
+            82.4,
+            67.4
+        )
+    )
+));
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
@@ -81,12 +93,6 @@ function handleScroll() {
 </script>
 
 <style scoped>
-/*
-.home {
-  width: 1280px;
-}
- */
-
 .header-menu {
   height: 40px;
 }

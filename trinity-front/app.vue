@@ -1,13 +1,14 @@
 <template>
-  <div class="relative bg-fixed background">
-    <div class="home inset-0 flex justify-center select-none overflow-x-auto">
-      <Home/>
+<!--  <NuxtLayout>-->
+    <div class="relative bg-fixed background">
+      <div class="home inset-0 flex justify-center select-none overflow-x-auto">
+        <NuxtPage />
+      </div>
     </div>
-  </div>
+<!--  </NuxtLayout>-->
 </template>
 <script setup lang="ts">
 import "tw-elements/dist/css/tw-elements.min.css";
-import Home from "~/components/home/Home.vue";
 </script>
 
 <style scoped>
@@ -18,7 +19,7 @@ import Home from "~/components/home/Home.vue";
 }
 
 .background {
-  background-image: url(public/background.jpeg);
+  background-image: url(/background.jpeg);
   background-position: center;
   animation: zoom 30s infinite;
 }
@@ -31,4 +32,5 @@ import Home from "~/components/home/Home.vue";
     background-size: 120%;
   }
 }
+
 </style>
