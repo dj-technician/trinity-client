@@ -368,3 +368,5 @@ node_modules
 *.log
 
 # End of https://www.toptal.com/developers/gitignore/api/nuxtjs
+
+*.iml
