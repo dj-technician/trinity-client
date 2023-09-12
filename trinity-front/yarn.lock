@@ -929,6 +929,16 @@
     "@sigstore/protobuf-specs" "^0.2.1"
     "tuf-js" "^2.1.0"
 
+"@tailwindcss/typography@^0.5.10":
+  "integrity" "sha512-Pe8BuPJQJd3FfRnm6H0ulKIGoMEQS+Vq01R6M5aCrFB/ccR/shT+0kXLjouGC1gFLm9hopTFN+DMP0pfwRWzPw=="
+  "resolved" "https://registry.npmjs.org/@tailwindcss/typography/-/typography-0.5.10.tgz"
+  "version" "0.5.10"
+  dependencies:
+    "lodash.castarray" "^4.4.0"
+    "lodash.isplainobject" "^4.0.6"
+    "lodash.merge" "^4.6.2"
+    "postcss-selector-parser" "6.0.10"
+
 "@tootallnate/once@2":
   "integrity" "sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A=="
   "resolved" "https://registry.npmjs.org/@tootallnate/once/-/once-2.0.0.tgz"
@@ -3393,6 +3403,11 @@
   "resolved" "https://registry.npmjs.org/local-pkg/-/local-pkg-0.4.3.tgz"
   "version" "0.4.3"
 
+"lodash.castarray@^4.4.0":
+  "integrity" "sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q=="
+  "resolved" "https://registry.npmjs.org/lodash.castarray/-/lodash.castarray-4.4.0.tgz"
+  "version" "4.4.0"
+
 "lodash.debounce@^4.0.8":
   "integrity" "sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow=="
   "resolved" "https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz"
@@ -3408,10 +3423,20 @@
   "resolved" "https://registry.npmjs.org/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz"
   "version" "3.1.0"
 
+"lodash.isplainobject@^4.0.6":
+  "integrity" "sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA=="
+  "resolved" "https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz"
+  "version" "4.0.6"
+
 "lodash.memoize@^4.1.2":
   "integrity" "sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag=="
   "resolved" "https://registry.npmjs.org/lodash.memoize/-/lodash.memoize-4.1.2.tgz"
   "version" "4.1.2"
+
+"lodash.merge@^4.6.2":
+  "integrity" "sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ=="
+  "resolved" "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
+  "version" "4.6.2"
 
 "lodash.pick@^4.4.0":
   "integrity" "sha512-hXt6Ul/5yWjfklSGvLQl8vM//l3FtyHZeuelpzK6mm99pNvN9yTDruNZPEJZD1oWrqo+izBmB7oUfWgcCX7s4Q=="
@@ -4621,6 +4646,14 @@
     "cssesc" "^3.0.0"
     "util-deprecate" "^1.0.2"
 
+"postcss-selector-parser@6.0.10":
+  "integrity" "sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w=="
+  "resolved" "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.0.10.tgz"
+  "version" "6.0.10"
+  dependencies:
+    "cssesc" "^3.0.0"
+    "util-deprecate" "^1.0.2"
+
 "postcss-svgo@^6.0.0":
   "integrity" "sha512-r9zvj/wGAoAIodn84dR/kFqwhINp5YsJkLoujybWG59grR/IHx+uQ2Zo+IcOwM0jskfYX3R0mo+1Kip1VSNcvw=="
   "resolved" "https://registry.npmjs.org/postcss-svgo/-/postcss-svgo-6.0.0.tgz"
@@ -5358,7 +5391,7 @@
     "csso" "^5.0.5"
     "picocolors" "^1.0.0"
 
-"tailwindcss@^3.3.3":
+"tailwindcss@^3.3.3", "tailwindcss@>=3.0.0 || insiders":
   "integrity" "sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w=="
   "resolved" "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.3.3.tgz"
   "version" "3.3.3"
