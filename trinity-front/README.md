@@ -1,3 +1,12 @@
+## Deployment scripts
+
+### front
+```
+docker build -t trinity-front . --platform=linux/amd64
+aws lightsail push-container-image --region ap-northeast-2 --service-name trinity-front --label trinity --image trinity-front:latest
+```
+
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
