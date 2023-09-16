@@ -1,0 +1,22 @@
+{
+  "containers": {
+    "front": {
+      "image": "",
+      "ports": {
+        "3000": "HTTP"
+      }
+    }
+  },
+  "publicEndpoint": {
+    "containerName": "front",
+    "containerPort": 3000,
+    "healthCheck": {
+      "healthyThreshold": 2,
+      "unhealthyThreshold": 2,
+      "timeoutSeconds": 2,
+      "intervalSeconds": 3,
+      "path": "/devjk",
+      "successCodes": "200-499"
+    }
+  }
+}
