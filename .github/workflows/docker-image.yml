@@ -8,6 +8,7 @@ env:
   AWS_REGION: ap-northeast-2
   AWS_LIGHTSAIL_PROJECT: trinity
   AWS_LIGHTSAIL_SERVICE_NAME: trinity-front
+  CONTAINER_TAG: $(date +%s)
     
 jobs:
 
@@ -18,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag trinity-front:$(date +%s)
+        run: docker build . --file Dockerfile --tag trinity-front:${ env.CONTAINER_TAG }
 
       - name: Install Utilities
         run: |
@@ -51,7 +52,7 @@ jobs:
             --region ${{ env.AWS_REGION }} \
             --service-name ${{ env.AWS_LIGHTSAIL_SERVICE_NAME }} \
             --label ${{ env.AWS_LIGHTSAIL_PROJECT }} \
-            --image ${{ env.AWS_LIGHTSAIL_SERVICE_NAME }}:latest
+            --image ${{ env.AWS_LIGHTSAIL_SERVICE_NAME }}:${ env.CONTAINER_TAG }
 
       - name: Deploy
         run: |
