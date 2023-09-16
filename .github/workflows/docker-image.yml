@@ -16,8 +16,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v3
       - name: Build the Docker image
-        uses: actions/checkout@v3
         run: docker build . --file Dockerfile --tag trinity-front:$(date +%s)
 
       - name: Install Utilities
