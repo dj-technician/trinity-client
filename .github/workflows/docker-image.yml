@@ -50,7 +50,7 @@ jobs:
           aws lightsail push-container-image \
             --region ${{ env.AWS_REGION }} \
             --service-name ${{ env.AWS_LIGHTSAIL_SERVICE_NAME }} \
-            --label ${{ env.AWS_LIGHTSAIL_PROJECT }}
+            --label ${{ env.AWS_LIGHTSAIL_PROJECT }} \
             --image ${{ env.AWS_LIGHTSAIL_SERVICE_NAME }}:latest
 
       - name: Deploy
