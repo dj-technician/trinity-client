@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col bg-stone-800 h-full p-3 select-auto">
+  <div class="flex flex-col bg-stone-800 h-full p-3 select-auto bg-opacity-50 backdrop-blur">
     <div class="flex w-full h-full justify-center place-items-center">
       <div v-html="markdown" class="prose prose-lg prose-invert justify-center place-items-center">
       </div>

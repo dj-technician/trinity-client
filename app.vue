@@ -1,11 +1,14 @@
 <template>
-<!--  <NuxtLayout>-->
-    <div class="relative bg-fixed background">
-      <div class="home inset-0 flex justify-center select-none overflow-x-auto">
-        <NuxtPage />
-      </div>
-    </div>
-<!--  </NuxtLayout>-->
+  <!--  <NuxtLayout>-->
+<!--    <div class="relative bg-fixed background">-->
+  <video class="fixed w-full h-full object-cover background" autoplay muted loop>
+    <source src="/background9.mp4"/>
+  </video>
+  <div class="z-100 home inset-0 flex justify-center select-none overflow-x-auto">
+    <NuxtPage/>
+  </div>
+<!--    </div>-->
+  <!--  </NuxtLayout>-->
 </template>
 <script setup lang="ts">
 import "tw-elements/dist/css/tw-elements.min.css";
@@ -19,9 +22,10 @@ import "tw-elements/dist/css/tw-elements.min.css";
 }
 
 .background {
-  background-image: url(/background.jpeg);
-  background-position: center;
-  animation: zoom 30s infinite;
+  //background-image: url(/background4.jpg);
+  //background-position: center;
+  //animation: zoom 30s infinite;
+  z-index: -1;
 }
 
 @keyframes zoom {

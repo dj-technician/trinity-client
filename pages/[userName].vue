@@ -46,6 +46,10 @@ const blogInfo: BlogInfo = reactive(new BlogInfo(
         )
     )
 ));
+
+definePageMeta({
+  layout: 'blog'
+})
 </script>
 
 <style scoped>
