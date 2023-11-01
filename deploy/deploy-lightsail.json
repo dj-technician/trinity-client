@@ -15,7 +15,7 @@
       "unhealthyThreshold": 2,
       "timeoutSeconds": 2,
       "intervalSeconds": 5,
-      "path": "/devjk",
+      "path": "/",
       "successCodes": "200-499"
     }
   }
