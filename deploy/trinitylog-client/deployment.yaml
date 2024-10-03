@@ -1,0 +1,23 @@
+kind: Deployment
+metadata:
+  name: trinitylog-client
+  namespace: trinitylog
+spec:
+  selector:
+    matchLabels:
+      app: trinitylog-client
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: trinitylog-client
+    spec:
+      containers:
+        - name: trinitylog-client
+          image: 10.105.58.187:5000/trinitylog-client:2
+          imagePullPolicy: Always
+          envFrom:
+          - secretRef:
+              name: trinitylog-secret
+          ports:
+          - containerPort: 3000
