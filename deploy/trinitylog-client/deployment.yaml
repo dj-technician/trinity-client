@@ -1,3 +1,4 @@
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: trinitylog-client
@@ -14,7 +15,7 @@ spec:
     spec:
       containers:
         - name: trinitylog-client
-          image: 10.105.58.187:5000/trinitylog-client:2
+          image: 10.105.58.187:5000/trinitylog-client:3
           imagePullPolicy: Always
           envFrom:
           - secretRef:
