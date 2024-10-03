@@ -1,0 +1,23 @@
+kind: Deployment
+metadata:
+  name: {{ROLE}}
+  namespace: trinitylog
+spec:
+  selector:
+    matchLabels:
+      app: {{ROLE}}
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: {{ROLE}}
+    spec:
+      containers:
+        - name: {{ROLE}}
+          image: {{DOCKER_REGISTRY}}/{{DOCKER_NAME}}:{{TAG}}
+          imagePullPolicy: Always
+          envFrom:
+          - secretRef:
+              name: trinitylog-secret
+          ports:
+          - containerPort: {{PORT}}
